@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+    margin-bottom: 1em;
+    font-family: 'Open-Sans', sans-serif;
+    color: #191919;
+}
+
+.heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.forecast {
+    font-weight: bold;
+}
+
+p {
+    font-size: 12px;
+    margin: 0;
+}
+
+.btn-1 {
+    font-size: 15px;
+    height: 30px;
+    background: #3d3d3d;
+    color: white;
+    border: 1px solid #7f7f7f;
+    padding-top: 2px;
+    margin-left: 2px;
+
+}
+
+.btn-1:hover {
+    background-color: #575757;
+    color: white;
+    border: 1px solid #7f7f7f;
+}
+
+.inputSearch {
+    font-size: 15px;
+    width: 120px;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+    margin-right: 3px;
+    padding: 4px;
+}
+
+.inputSearch2 {
+    font-size: 15px;
+    width: 200px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #9d9d9d;
+    padding: 4px;
+
+}
+
+.inputSearch:focus {
+    background-color: white;
+}
+
+.topNav {
+    background: #bcbcbc;
+    background: -moz-linear-gradient(-45deg, #bcbcbc 0%, #4c4c4c 100%);
+    background: -webkit-linear-gradient(-45deg, #bcbcbc 0%, #4c4c4c 100%);
+    background: linear-gradient(135deg, #bcbcbc 0%, #4c4c4c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bcbcbc', endColorstr='#4c4c4c', GradientType=1);
+    border-bottom: 1px solid #c9c9c9;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-text {
+    margin-right: 0px;
+    justify-self: end;
+    padding: 0px;
+}
+
+.navSearch {
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+    height: 20px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px 3px;
+    letter-spacing: .5px;
+
+}
+
+.name {
+    font-weight: bolder;
+    font-size: 13px;
+    letter-spacing: 0px;
+}
+
+.smallNav {
+    background: #a3a3a3;
+    border-bottom: 1px solid #747474;
+}
+
+h2 {
+    display: flex;
+}
+
+.card {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    -moz-box-shadow: 4px 2px 4px 1px #ccc;
+    -webkit-box-shadow: 4px 2px 4px 1px #ccc;
+    box-shadow: 4px 2px 4px 1px #ccc;
+}
+
+
+#map {
+    border-radius: 5px;
+    justify-self: auto;
+}
+
+.container {
+    padding-top: 8px;
+    padding-bottom: 0px;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #191919;
+}
