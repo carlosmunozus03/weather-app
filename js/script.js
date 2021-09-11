@@ -49,48 +49,7 @@ $(document).ready(function () {
         return separateWord.join(' ');
     }
 
-// quick search
-    function weather(city) {
-        var search = city.toString();
-        $.get("http://api.openweathermap.org/data/2.5/weather", {
-            APPID: WEATHER_MAP_TOKEN,
-            q: search,
-            units: "imperial"
-        }).done(function (data) {
-            console.log(data)
-            var today = new Date();
-            var hours = today.getHours();
-            var ampm = hours >= 12 ? 'pm' : 'am';
-            hours = hours % 12;
-            var time = hours + ":" + today.getMinutes() + " " + ampm;
-            var displayWeather = "";
-            var iconImage = "";
-            iconImage += `<img style='margin: auto' class="icon" width="30px" src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png\n"/>`
-            var clouds = data.weather[0].description;
-            var newClouds = capitalize(clouds);
-
-            displayWeather += `<p class="navSearch">`
-            displayWeather += `<span class="name">${data.name}:</span>  ${time}&nbsp;&nbsp;&nbsp;  `
-            displayWeather += ` Temp: ${Math.round(data.main.temp)}°F&nbsp;&nbsp;&nbsp; `
-            displayWeather += `${newClouds}`
-            displayWeather += `${iconImage}&nbsp;&nbsp;&nbsp;`
-            displayWeather += ` Hi: ${Math.round(data.main.temp_max)}°F Lo: ${Math.round(data.main.temp_min)}°F&nbsp;&nbsp;&nbsp;`
-            displayWeather += ` Humidity: ${data.main.humidity}% `
-            displayWeather += `</p>`
-            $('#navSearch').html(displayWeather);
-        });
-    }
-
-
-    var button = document.querySelector('#button')
-    button.addEventListener('click', function (e) {
-        e.preventDefault();
-        var newSearch = document.querySelector('#weatherSearch').value;
-        weather(newSearch);
-    });
-    weather('San Antonio')
-
-// Attatch a map
+// put the  map
     mapboxgl.accessToken = MAPBOX_ACCESS_TOKEN;
     var map = new mapboxgl.Map({
         container: 'map', // container ID
