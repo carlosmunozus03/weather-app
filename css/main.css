@@ -1,4 +1,6 @@
+/*noinspection CssUnknownTarget*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+/*noinspection CssUnknownTarget*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
 body {
@@ -81,15 +83,15 @@ p {
 }
 
 .navbar-text {
-    margin-right: 0px;
+    margin-right: 0;
     justify-self: end;
-    padding: 0px;
+    padding: 0;
 }
 
 .name {
     font-weight: bolder;
     font-size: 13px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
 }
 
 .smallNav {
@@ -117,7 +119,7 @@ h2 {
 
 .container {
     padding-top: 8px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 }
 
 #footer a {
